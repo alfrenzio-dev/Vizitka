@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои контакты</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #1e293b;
+      --accent: #06b6d4;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(180deg, var(--bg1), var(--bg2));
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 30px 40px;
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--accent), #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: white;
+      margin: 0 auto 15px;
+    }
+
+    h1 {
+      margin: 10px 0 4px;
+      font-size: 22px;
+    }
+
+    p.subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    a.link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    a.link:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">🇺🇿</div>
+    <h1>Привет! 👋</h1>
+    <p class="subtitle">Это мои официальные ссылки, не перепутай 😉</p>
+
+    <div class="links">
+      <!-- 👇 Здесь замени ссылки на свои ники -->
+      <a class="link" href="https://instagram.com/sanjar.1337" target="_blank">📸 Instagram</a>
+      <a class="link" href="https://t.me/alfrenzii" target="_blank">💬 Telegram</a>
+      <a class="link" href="mailto:alfrenzio@gmail.com">✉️ Email</a>
+      <!-- ☝️ Замени ссылки и всё, готово -->
+    </div>
+
+    <footer>Создано с ❤️ специально для тебя</footer>
+  </div>
+</body>
+</html>
